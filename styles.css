@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/clover-2');
+     
+/* Try oswald and nunito sans*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* bg color, margin, padding */
+:root {
+    --bg-color-primary: #1e1f23;
+    --bg-color-secondary: #c99d7f;
+    --font-color-primary: #A6A9AA;
+    --font-color-secondary: #c99d7f;
+    --font-color-tertiary: #1e1f23;
+    --border-color: #6b6f72;
+    --padding-xs: .5rem; 
+    --padding-small: 1rem;
+    --padding-medium: 2rem;
+    --padding-large: 3rem;
+    --padding-xl: 4rem;
+    --margin-xs: .5rem;
+    --margin-small: 1rem;
+    --margin-medium: 2rem;
+}
+
+body {
+    background-color: var(--bg-color-primary);
+    color: var(--font-color-primary);
+    font-family: "Nunito Sans", serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+    font-family: 'clover', sans-serif;
+    text-transform: lowercase;
+    font-size: 2.25rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-wrapper {
+    display: flex;
+    border-radius: 10px;
+}
+
+button {
+    width: 100px;
+    font-size: 1rem;
+    margin: var(--padding-xs);
+    padding: var(--padding-xs);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color-primary);
+    color: var(--font-color-secondary);
+    border: 1px solid var(--font-color-secondary);
+}
+
+button:hover {
+    background-color: var(--bg-color-secondary);
+    color: var(--font-color-tertiary);
+    border: 1px solid var(--bg-color-primary);
+}
+
+i {
+    padding-inline: var(--padding-xs);
+}
+
+.advice-card {
+    width: 500px;
+    margin: var(--margin-small) auto;
+    background-color: var(--bg-color-primary);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: var(--padding-small) var(--padding-medium);
+    overflow-x: hidden;
+}
+
+.advice-card #advice {
+    height: 125px;
+}
+
+.btn-wrapper {
+    align-self: flex-end;
+}
+
+#advice-list {
+    width: 500px;
+    margin: var(--margin-medium) auto;
+    padding-inline: var(--padding-small);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 1rem;
+    list-style-type: none;
+    font-family: "Nunito Sans", serif;
+    overflow-x: hidden;
+}
+
+#advice-list li {
+    border-bottom: 2px solid var(--bg-color-secondary);
+    
+}
+
+.advice-col-one {
+    grid-column-start: 1; 
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 280px 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.delete-btn,
+.edit-btn {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.delete-btn {
+    grid-column: 2 / 3;
+}
+
+.edit-btn {
+    grid-column: 3 / 4;
+}
+
+
+
+
+
