@@ -1,4 +1,3 @@
-
 An assignment for education at Lexicon 
 
 API of choice 
